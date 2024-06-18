@@ -9,6 +9,11 @@
   },
   {
     "@id": "ex:Flood_Warning_System",
+    "ex:Affects": [
+      {
+        "@id": "ex:Evacuation_Of_Residents"
+      }
+    ],
     "ex:Analyzes": [
       {
         "@id": "ex:Forecasting"
@@ -24,18 +29,30 @@
         "@id": "ex:Flood"
       }
     ],
-    "ex:Recommends": [
+    "ex:Uses": [
       {
-        "@id": "ex:Evacuation_Of_Residents"
+        "@id": "ex:Sensors"
       }
     ]
   },
   {
-    "@id": "ex:Earthquake",
-    "ex:Causes": [
+    "@id": "ex:Weather_Prediction",
+    "ex:Anticipates": [
       {
-        "@id": "ex:Tsunami"
+        "@id": "ex:Snowfall"
+      },
+      {
+        "@id": "ex:Storm_Surges"
+      },
+      {
+        "@id": "ex:Heavy_Rainfall"
       }
+    ]
+  },
+  {
+    "@id": "ex:Sirens",
+    "@type": [
+      "ex:Communication_Channels"
     ]
   },
   {
@@ -53,16 +70,43 @@
     ]
   },
   {
+    "@id": "ex:Retention_Ponds",
+    "@type": [
+      "ex:Stormwater_Bassin"
+    ],
+    "ex:ContributeTo": [
+      {
+        "@id": "ex:Flood_Control"
+      }
+    ],
+    "ex:Improve": [
+      {
+        "@id": "ex:Water_Quality"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Storm_Surges",
+    "ex:Causes": [
+      {
+        "@id": "ex:Flood"
+      }
+    ]
+  },
+  {
     "@id": "ex:Homes_Damage",
     "@type": [
       "ex:Property_Damage"
     ]
   },
   {
-    "@id": "ex:Weather_Prediction",
-    "ex:Anticipates": [
+    "@id": "ex:Evacuation_Of_Residents",
+    "ex:Reduces": [
       {
-        "@id": "ex:Heavy_Rainfall"
+        "@id": "ex:Loss_Of_Life"
+      },
+      {
+        "@id": "ex:Health_And_Safety_Risks"
       }
     ]
   },
@@ -75,9 +119,19 @@
     ]
   },
   {
-    "@id": "ex:Consumer_Cameras",
-    "@type": [
-      "ex:Cameras"
+    "@id": "ex:Floodwalls",
+    "ex:Mitigate": [
+      {
+        "@id": "ex:Flood"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Snowmelt",
+    "ex:Causes": [
+      {
+        "@id": "ex:Flood"
+      }
     ]
   },
   {
@@ -89,6 +143,24 @@
   {
     "@id": "ex:Heavy_Rainfall",
     "ex:Causes": [
+      {
+        "@id": "ex:Flood"
+      }
+    ],
+    "ex:LeadsTo": [
+      {
+        "@id": "ex:River_Overflow"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Floodways",
+    "ex:Diverts": [
+      {
+        "@id": "ex:River_Overflow"
+      }
+    ],
+    "ex:Mitigate": [
       {
         "@id": "ex:Flood"
       }
@@ -113,15 +185,15 @@
         "@id": "ex:Flood"
       }
     ],
-    "ex:Due_To": [
+    "ex:DueTo": [
       {
-        "@id": "ex:Overtopping"
+        "@id": "ex:Material_Defects"
       },
       {
         "@id": "ex:Inadequate_Maintenance"
       },
       {
-        "@id": "ex:Material_Defects"
+        "@id": "ex:Overtopping"
       }
     ]
   },
@@ -132,28 +204,105 @@
     ]
   },
   {
+    "@id": "ex:River_Flood_Warning_System",
+    "ex:Analyzes": [
+      {
+        "@id": "ex:Data"
+      }
+    ],
+    "ex:Detects": [
+      {
+        "@id": "ex:River_Overflow"
+      }
+    ],
+    "ex:Generates": [
+      {
+        "@id": "ex:Alerts"
+      }
+    ],
+    "ex:Uses": [
+      {
+        "@id": "ex:Sensors"
+      }
+    ]
+  },
+  {
     "@id": "ex:Flood",
+    "ex:Affects": [
+      {
+        "@id": "ex:Water_Quality"
+      }
+    ],
     "ex:Causes": [
       {
-        "@id": "ex:Evacuation_Of_Residents"
+        "@id": "ex:Traffic_Diruption"
       },
       {
-        "@id": "ex:Property_Damage"
+        "@id": "ex:Evacuation_Of_Residents"
       },
       {
         "@id": "ex:Business_Disruption"
       },
       {
-        "@id": "ex:Health_And_Safety_Risks"
-      },
-      {
-        "@id": "ex:Traffic_Disruption"
+        "@id": "ex:Environmental_Damage"
       },
       {
         "@id": "ex:Loss_Of_Life"
       },
       {
-        "@id": "ex:Environmental_Damage"
+        "@id": "ex:Health_And_Safety_Risks"
+      },
+      {
+        "@id": "ex:Property_Damage"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Environmental_Damage",
+    "ex:LeadsTo": [
+      {
+        "@id": "ex:Loss_Of_Life"
+      },
+      {
+        "@id": "ex:Health_And_Safety_Risks"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Sensors",
+    "ex:Detect": [
+      {
+        "@id": "ex:Flood"
+      }
+    ],
+    "ex:Generate": [
+      {
+        "@id": "ex:Data"
+      }
+    ],
+    "ex:Measure": [
+      {
+        "@id": "ex:Water_Quality"
+      },
+      {
+        "@id": "ex:Soil_Moisture"
+      },
+      {
+        "@id": "ex:Streamflow"
+      },
+      {
+        "@id": "ex:Water_Level"
+      },
+      {
+        "@id": "ex:Heavy_Rainfall"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Snowfall",
+    "ex:Causes": [
+      {
+        "@id": "ex:Snowmelt"
       }
     ]
   },
@@ -176,29 +325,28 @@
     ]
   },
   {
-    "@id": "ex:Sensors",
-    "ex:Detect": [
+    "@id": "ex:Stormwater_Bassin",
+    "ex:Mitigate": [
       {
         "@id": "ex:Flood"
       }
     ],
-    "ex:Generate": [
+    "ex:Uses": [
       {
-        "@id": "ex:Data"
+        "@id": "ex:Sensors"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Water_Quality",
+    "ex:Affects": [
+      {
+        "@id": "ex:Environmental_Damage"
       }
     ],
-    "ex:Measure": [
+    "ex:Impacts": [
       {
-        "@id": "ex:Soil_Moisture"
-      },
-      {
-        "@id": "ex:Heavy_Rainfall"
-      },
-      {
-        "@id": "ex:Water_Level"
-      },
-      {
-        "@id": "ex:Streamflow"
+        "@id": "ex:Health_And_Safety_Risks"
       }
     ]
   },
@@ -215,6 +363,19 @@
     "ex:Generates": [
       {
         "@id": "ex:Forecasting"
+      }
+    ],
+    "ex:Uses": [
+      {
+        "@id": "ex:Sensors"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Data",
+    "ex:Reflects": [
+      {
+        "@id": "ex:Water_Quality"
       }
     ]
   },
@@ -250,15 +411,64 @@
     ]
   },
   {
-    "@id": "ex:Mobile_Phone_Messages",
-    "@type": [
-      "ex:Communication_Channels"
+    "@id": "ex:Alerts",
+    "ex:IssuedTo": [
+      {
+        "@id": "ex:Communication_Channels"
+      }
+    ],
+    "ex:Notify": [
+      {
+        "@id": "ex:General_Public"
+      }
     ]
   },
   {
-    "@id": "ex:Sirens",
+    "@id": "ex:Consumer_Cameras",
     "@type": [
-      "ex:Communication_Channels"
+      "ex:Cameras"
+    ]
+  },
+  {
+    "@id": "ex:Earthquake",
+    "ex:Causes": [
+      {
+        "@id": "ex:Tsunami"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Detention_Ponds",
+    "@type": [
+      "ex:Stormwater_Bassin"
+    ]
+  },
+  {
+    "@id": "ex:Hydrological_Monitoring_System",
+    "ex:Addresses": [
+      {
+        "@id": "ex:Health_And_Safety_Risks"
+      }
+    ],
+    "ex:Analyzes": [
+      {
+        "@id": "ex:Data"
+      }
+    ],
+    "ex:Assesses": [
+      {
+        "@id": "ex:Water_Quality"
+      }
+    ],
+    "ex:Generates": [
+      {
+        "@id": "ex:Alerts"
+      }
+    ],
+    "ex:Uses": [
+      {
+        "@id": "ex:Sensors"
+      }
     ]
   },
   {
@@ -289,16 +499,15 @@
     ]
   },
   {
-    "@id": "ex:Alerts",
-    "ex:IssuedTo": [
-      {
-        "@id": "ex:Communication_Channels"
-      }
-    ],
-    "ex:Notify": [
-      {
-        "@id": "ex:General_Public"
-      }
+    "@id": "ex:Soil_Erosion",
+    "@type": [
+      "ex:Environmental_Damage"
+    ]
+  },
+  {
+    "@id": "ex:Mobile_Phone_Messages",
+    "@type": [
+      "ex:Communication_Channels"
     ]
   }
 ]
