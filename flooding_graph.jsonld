@@ -9,11 +9,6 @@
   },
   {
     "@id": "ex:Flood_Warning_System",
-    "ex:Affects": [
-      {
-        "@id": "ex:Evacuation_Of_Residents"
-      }
-    ],
     "ex:Analyzes": [
       {
         "@id": "ex:Forecasting"
@@ -29,6 +24,11 @@
         "@id": "ex:Flood"
       }
     ],
+    "ex:Recommends": [
+      {
+        "@id": "ex:Evacuation_Of_Residents"
+      }
+    ],
     "ex:Uses": [
       {
         "@id": "ex:Sensors"
@@ -39,20 +39,14 @@
     "@id": "ex:Weather_Prediction",
     "ex:Anticipates": [
       {
+        "@id": "ex:Heavy_Rainfall"
+      },
+      {
         "@id": "ex:Snowfall"
       },
       {
         "@id": "ex:Storm_Surges"
-      },
-      {
-        "@id": "ex:Heavy_Rainfall"
       }
-    ]
-  },
-  {
-    "@id": "ex:Sirens",
-    "@type": [
-      "ex:Communication_Channels"
     ]
   },
   {
@@ -86,11 +80,9 @@
     ]
   },
   {
-    "@id": "ex:Storm_Surges",
-    "ex:Causes": [
-      {
-        "@id": "ex:Flood"
-      }
+    "@id": "ex:Dedicated_Smartphone_App",
+    "@type": [
+      "ex:Communication_Channels"
     ]
   },
   {
@@ -228,32 +220,32 @@
   },
   {
     "@id": "ex:Flood",
-    "ex:Affects": [
-      {
-        "@id": "ex:Water_Quality"
-      }
-    ],
     "ex:Causes": [
-      {
-        "@id": "ex:Traffic_Diruption"
-      },
       {
         "@id": "ex:Evacuation_Of_Residents"
       },
       {
+        "@id": "ex:Property_Damage"
+      },
+      {
         "@id": "ex:Business_Disruption"
+      },
+      {
+        "@id": "ex:Traffic_Diruption"
+      },
+      {
+        "@id": "ex:Health_And_Safety_Risks"
       },
       {
         "@id": "ex:Environmental_Damage"
       },
       {
         "@id": "ex:Loss_Of_Life"
-      },
+      }
+    ],
+    "ex:Impacts": [
       {
-        "@id": "ex:Health_And_Safety_Risks"
-      },
-      {
-        "@id": "ex:Property_Damage"
+        "@id": "ex:Water_Quality"
       }
     ]
   },
@@ -282,19 +274,19 @@
     ],
     "ex:Measure": [
       {
-        "@id": "ex:Water_Quality"
-      },
-      {
         "@id": "ex:Soil_Moisture"
       },
       {
         "@id": "ex:Streamflow"
       },
       {
-        "@id": "ex:Water_Level"
+        "@id": "ex:Water_Quality"
       },
       {
         "@id": "ex:Heavy_Rainfall"
+      },
+      {
+        "@id": "ex:Water_Level"
       }
     ]
   },
@@ -303,6 +295,14 @@
     "ex:Causes": [
       {
         "@id": "ex:Snowmelt"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Earthquake",
+    "ex:Causes": [
+      {
+        "@id": "ex:Tsunami"
       }
     ]
   },
@@ -319,9 +319,11 @@
     ]
   },
   {
-    "@id": "ex:Dedicated_Smartphone_App",
-    "@type": [
-      "ex:Communication_Channels"
+    "@id": "ex:Storm_Surges",
+    "ex:Causes": [
+      {
+        "@id": "ex:Flood"
+      }
     ]
   },
   {
@@ -339,7 +341,7 @@
   },
   {
     "@id": "ex:Water_Quality",
-    "ex:Affects": [
+    "ex:Generates": [
       {
         "@id": "ex:Environmental_Damage"
       }
@@ -411,16 +413,9 @@
     ]
   },
   {
-    "@id": "ex:Alerts",
-    "ex:IssuedTo": [
-      {
-        "@id": "ex:Communication_Channels"
-      }
-    ],
-    "ex:Notify": [
-      {
-        "@id": "ex:General_Public"
-      }
+    "@id": "ex:Mobile_Phone_Messages",
+    "@type": [
+      "ex:Communication_Channels"
     ]
   },
   {
@@ -430,11 +425,9 @@
     ]
   },
   {
-    "@id": "ex:Earthquake",
-    "ex:Causes": [
-      {
-        "@id": "ex:Tsunami"
-      }
+    "@id": "ex:Sirens",
+    "@type": [
+      "ex:Communication_Channels"
     ]
   },
   {
@@ -491,10 +484,10 @@
     ],
     "ex:Provides": [
       {
-        "@id": "ex:Flood_Control"
+        "@id": "ex:Irrigation"
       },
       {
-        "@id": "ex:Irrigation"
+        "@id": "ex:Flood_Control"
       }
     ]
   },
@@ -505,9 +498,16 @@
     ]
   },
   {
-    "@id": "ex:Mobile_Phone_Messages",
-    "@type": [
-      "ex:Communication_Channels"
+    "@id": "ex:Alerts",
+    "ex:IssuedTo": [
+      {
+        "@id": "ex:Communication_Channels"
+      }
+    ],
+    "ex:Notify": [
+      {
+        "@id": "ex:General_Public"
+      }
     ]
   }
 ]
