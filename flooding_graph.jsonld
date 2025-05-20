@@ -1,167 +1,28 @@
 [
   {
-    "@id": "ex:Siphoning",
-    "ex:Causes": [
+    "@id": "ex:Edge_Computing",
+    "ex:Enables": [
       {
-        "@id": "ex:Flood"
-      }
-    ]
-  },
-  {
-    "@id": "ex:Flood_Warning_System",
-    "ex:Analyzes": [
-      {
-        "@id": "ex:Forecasting"
+        "@id": "ex:Real_Time_Analysis"
       }
     ],
-    "ex:Generates": [
+    "ex:Hosts": [
       {
-        "@id": "ex:Alerts"
-      }
-    ],
-    "ex:Predicts": [
-      {
-        "@id": "ex:Flood"
-      }
-    ],
-    "ex:Recommends": [
-      {
-        "@id": "ex:Evacuation_Of_Residents"
-      }
-    ],
-    "ex:Uses": [
-      {
-        "@id": "ex:Sensors"
-      }
-    ]
-  },
-  {
-    "@id": "ex:Weather_Prediction",
-    "ex:Anticipates": [
-      {
-        "@id": "ex:Heavy_Rainfall"
+        "@id": "ex:Weather_Prediction_Model"
       },
       {
-        "@id": "ex:Snowfall"
-      },
-      {
-        "@id": "ex:Storm_Surges"
-      }
-    ]
-  },
-  {
-    "@id": "ex:Tsunami",
-    "ex:Causes": [
-      {
-        "@id": "ex:Flood"
-      }
-    ]
-  },
-  {
-    "@id": "ex:Social_Media_Notification",
-    "@type": [
-      "ex:Communication_Channels"
-    ]
-  },
-  {
-    "@id": "ex:Retention_Ponds",
-    "@type": [
-      "ex:Stormwater_Bassin"
-    ],
-    "ex:ContributeTo": [
-      {
-        "@id": "ex:Flood_Control"
+        "@id": "ex:Flood_Prediction_Model"
       }
     ],
-    "ex:Improve": [
-      {
-        "@id": "ex:Water_Quality"
-      }
-    ]
-  },
-  {
-    "@id": "ex:Dedicated_Smartphone_App",
-    "@type": [
-      "ex:Communication_Channels"
-    ]
-  },
-  {
-    "@id": "ex:Homes_Damage",
-    "@type": [
-      "ex:Property_Damage"
-    ]
-  },
-  {
-    "@id": "ex:Evacuation_Of_Residents",
     "ex:Reduces": [
       {
-        "@id": "ex:Loss_Of_Life"
-      },
-      {
-        "@id": "ex:Health_And_Safety_Risks"
-      }
-    ]
-  },
-  {
-    "@id": "ex:River_Overflow",
-    "ex:Causes": [
-      {
-        "@id": "ex:Flood"
-      }
-    ]
-  },
-  {
-    "@id": "ex:Floodwalls",
-    "ex:Mitigate": [
-      {
-        "@id": "ex:Flood"
-      }
-    ]
-  },
-  {
-    "@id": "ex:Snowmelt",
-    "ex:Causes": [
-      {
-        "@id": "ex:Flood"
-      }
-    ]
-  },
-  {
-    "@id": "ex:Government_Authorities",
-    "@type": [
-      "ex:General_Public"
-    ]
-  },
-  {
-    "@id": "ex:Heavy_Rainfall",
-    "ex:Causes": [
-      {
-        "@id": "ex:Flood"
+        "@id": "ex:Latency"
       }
     ],
-    "ex:LeadsTo": [
+    "ex:Supports": [
       {
-        "@id": "ex:River_Overflow"
+        "@id": "ex:Local_Decision_Making"
       }
-    ]
-  },
-  {
-    "@id": "ex:Floodways",
-    "ex:Diverts": [
-      {
-        "@id": "ex:River_Overflow"
-      }
-    ],
-    "ex:Mitigate": [
-      {
-        "@id": "ex:Flood"
-      }
-    ]
-  },
-  {
-    "@id": "ex:Remote_Cameras",
-    "@type": [
-      "ex:Cameras"
     ]
   },
   {
@@ -171,269 +32,42 @@
     ]
   },
   {
-    "@id": "ex:Dam_Failure",
-    "ex:Causes": [
-      {
-        "@id": "ex:Flood"
-      }
-    ],
-    "ex:DueTo": [
-      {
-        "@id": "ex:Material_Defects"
-      },
-      {
-        "@id": "ex:Inadequate_Maintenance"
-      },
-      {
-        "@id": "ex:Overtopping"
-      }
-    ]
-  },
-  {
-    "@id": "ex:Railroads_Damage",
+    "@id": "ex:Narrowband_IoT",
     "@type": [
-      "ex:Property_Damage"
-    ]
-  },
-  {
-    "@id": "ex:River_Flood_Warning_System",
-    "ex:Analyzes": [
-      {
-        "@id": "ex:Data"
-      }
-    ],
-    "ex:Detects": [
-      {
-        "@id": "ex:River_Overflow"
-      }
-    ],
-    "ex:Generates": [
-      {
-        "@id": "ex:Alerts"
-      }
-    ],
-    "ex:Uses": [
-      {
-        "@id": "ex:Sensors"
-      }
+      "ex:Low_Power_Wide_Area_Networks_LPWAN"
     ]
   },
   {
     "@id": "ex:Flood",
+    "ex:Affects": [
+      {
+        "@id": "ex:Water_Quality"
+      }
+    ],
     "ex:Causes": [
       {
         "@id": "ex:Evacuation_Of_Residents"
       },
       {
-        "@id": "ex:Property_Damage"
-      },
-      {
-        "@id": "ex:Business_Disruption"
-      },
-      {
-        "@id": "ex:Traffic_Diruption"
+        "@id": "ex:Infrastructure_Damage"
       },
       {
         "@id": "ex:Health_And_Safety_Risks"
-      },
-      {
-        "@id": "ex:Environmental_Damage"
       },
       {
         "@id": "ex:Loss_Of_Life"
       }
     ],
-    "ex:Impacts": [
+    "ex:Evaluated_Through": [
       {
-        "@id": "ex:Water_Quality"
+        "@id": "ex:Flood_Scenarios"
       }
     ]
   },
   {
-    "@id": "ex:Environmental_Damage",
-    "ex:LeadsTo": [
-      {
-        "@id": "ex:Loss_Of_Life"
-      },
-      {
-        "@id": "ex:Health_And_Safety_Risks"
-      }
-    ]
-  },
-  {
-    "@id": "ex:Sensors",
-    "ex:Detect": [
-      {
-        "@id": "ex:Flood"
-      }
-    ],
-    "ex:Generate": [
-      {
-        "@id": "ex:Data"
-      }
-    ],
-    "ex:Measure": [
-      {
-        "@id": "ex:Soil_Moisture"
-      },
-      {
-        "@id": "ex:Streamflow"
-      },
-      {
-        "@id": "ex:Water_Quality"
-      },
-      {
-        "@id": "ex:Heavy_Rainfall"
-      },
-      {
-        "@id": "ex:Water_Level"
-      }
-    ]
-  },
-  {
-    "@id": "ex:Snowfall",
-    "ex:Causes": [
-      {
-        "@id": "ex:Snowmelt"
-      }
-    ]
-  },
-  {
-    "@id": "ex:Earthquake",
-    "ex:Causes": [
-      {
-        "@id": "ex:Tsunami"
-      }
-    ]
-  },
-  {
-    "@id": "ex:Emergency_Radio_Broadcasts",
-    "@type": [
-      "ex:Communication_Channels"
-    ]
-  },
-  {
-    "@id": "ex:Emergencies_Response_Agencies",
-    "@type": [
-      "ex:General_Public"
-    ]
-  },
-  {
-    "@id": "ex:Storm_Surges",
-    "ex:Causes": [
-      {
-        "@id": "ex:Flood"
-      }
-    ]
-  },
-  {
-    "@id": "ex:Stormwater_Bassin",
-    "ex:Mitigate": [
-      {
-        "@id": "ex:Flood"
-      }
-    ],
-    "ex:Uses": [
-      {
-        "@id": "ex:Sensors"
-      }
-    ]
-  },
-  {
-    "@id": "ex:Water_Quality",
-    "ex:Generates": [
-      {
-        "@id": "ex:Environmental_Damage"
-      }
-    ],
-    "ex:Impacts": [
-      {
-        "@id": "ex:Health_And_Safety_Risks"
-      }
-    ]
-  },
-  {
-    "@id": "ex:Weather_Forecasting_System",
-    "@type": [
-      "ex:Weather_Prediction"
-    ],
-    "ex:Analyzes": [
-      {
-        "@id": "ex:Data"
-      }
-    ],
-    "ex:Generates": [
-      {
-        "@id": "ex:Forecasting"
-      }
-    ],
-    "ex:Uses": [
-      {
-        "@id": "ex:Sensors"
-      }
-    ]
-  },
-  {
-    "@id": "ex:Data",
-    "ex:Reflects": [
-      {
-        "@id": "ex:Water_Quality"
-      }
-    ]
-  },
-  {
-    "@id": "ex:Buildings_Damage",
-    "@type": [
-      "ex:Property_Damage"
-    ]
-  },
-  {
-    "@id": "ex:Vehicles_Damage",
-    "@type": [
-      "ex:Property_Damage"
-    ]
-  },
-  {
-    "@id": "ex:Cameras",
-    "ex:Detect": [
-      {
-        "@id": "ex:Flood"
-      }
-    ],
-    "ex:Generate": [
-      {
-        "@id": "ex:Data"
-      }
-    ]
-  },
-  {
-    "@id": "ex:Bridge_Damage",
-    "@type": [
-      "ex:Property_Damage"
-    ]
-  },
-  {
-    "@id": "ex:Mobile_Phone_Messages",
-    "@type": [
-      "ex:Communication_Channels"
-    ]
-  },
-  {
-    "@id": "ex:Consumer_Cameras",
+    "@id": "ex:Remote_Cameras",
     "@type": [
       "ex:Cameras"
-    ]
-  },
-  {
-    "@id": "ex:Sirens",
-    "@type": [
-      "ex:Communication_Channels"
-    ]
-  },
-  {
-    "@id": "ex:Detention_Ponds",
-    "@type": [
-      "ex:Stormwater_Bassin"
     ]
   },
   {
@@ -460,14 +94,156 @@
     ],
     "ex:Uses": [
       {
-        "@id": "ex:Sensors"
+        "@id": "ex:Flood_Prediction_Model"
+      },
+      {
+        "@id": "ex:Digital_Twin"
+      },
+      {
+        "@id": "ex:Computer_Vision"
+      },
+      {
+        "@id": "ex:Sensor"
       }
     ]
   },
   {
-    "@id": "ex:Television_Announcements",
+    "@id": "ex:Earthquake",
+    "ex:Causes": [
+      {
+        "@id": "ex:Tsunami"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Emergencies_Response_Agencies",
+    "@type": [
+      "ex:General_Public"
+    ]
+  },
+  {
+    "@id": "ex:Sirens",
     "@type": [
       "ex:Communication_Channels"
+    ]
+  },
+  {
+    "@id": "ex:Gradient_Boosting",
+    "@type": [
+      "ex:Machine_Learning_Models"
+    ]
+  },
+  {
+    "@id": "ex:Government_Authorities",
+    "@type": [
+      "ex:General_Public"
+    ]
+  },
+  {
+    "@id": "ex:Rain_Gauge",
+    "@type": [
+      "ex:Sensor"
+    ],
+    "ex:ConnectedVia": [
+      {
+        "@id": "ex:LoRaWAN"
+      },
+      {
+        "@id": "ex:Narrowband_IoT"
+      },
+      {
+        "@id": "ex:Cellular_Networks"
+      },
+      {
+        "@id": "ex:Sigfox"
+      }
+    ],
+    "ex:Measures": [
+      {
+        "@id": "ex:Heavy_Rainfall"
+      },
+      {
+        "@id": "ex:Precipitation"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Flood_Warning_System",
+    "ex:Analyzes": [
+      {
+        "@id": "ex:Forecasting"
+      }
+    ],
+    "ex:Detects": [
+      {
+        "@id": "ex:Flood"
+      }
+    ],
+    "ex:Generates": [
+      {
+        "@id": "ex:Alerts"
+      }
+    ],
+    "ex:Recommends": [
+      {
+        "@id": "ex:Evacuation_Of_Residents"
+      }
+    ],
+    "ex:Uses": [
+      {
+        "@id": "ex:Computer_Vision"
+      },
+      {
+        "@id": "ex:Flood_Prediction_Model"
+      },
+      {
+        "@id": "ex:Digital_Twin"
+      },
+      {
+        "@id": "ex:Cameras"
+      },
+      {
+        "@id": "ex:Sensor"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Railroads_Damage",
+    "@type": [
+      "ex:Property_Damage"
+    ]
+  },
+  {
+    "@id": "ex:LogisticRegression",
+    "@type": [
+      "ex:Machine_Learning_Models"
+    ]
+  },
+  {
+    "@id": "ex:Floodwalls",
+    "ex:Mitigate": [
+      {
+        "@id": "ex:Flood"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Stormwater_Bassin",
+    "ex:Mitigate": [
+      {
+        "@id": "ex:Flood"
+      }
+    ],
+    "ex:Uses": [
+      {
+        "@id": "ex:Sensor"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Support_Vector_Machines_SVM",
+    "@type": [
+      "ex:Machine_Learning_Models"
     ]
   },
   {
@@ -492,9 +268,139 @@
     ]
   },
   {
-    "@id": "ex:Soil_Erosion",
+    "@id": "ex:Dam_Failure",
     "@type": [
-      "ex:Environmental_Damage"
+      "ex:Infrastructure_Damage"
+    ],
+    "ex:DueTo": [
+      {
+        "@id": "ex:Inadequate_Maintenance"
+      },
+      {
+        "@id": "ex:Overtopping"
+      },
+      {
+        "@id": "ex:Material_Defects"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Cloud_Computing",
+    "ex:Hosts": [
+      {
+        "@id": "ex:Digital_Twin"
+      },
+      {
+        "@id": "ex:Weather_Prediction_Model"
+      },
+      {
+        "@id": "ex:Flood_Prediction_Model"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Time_Series_Analysis",
+    "ex:Analyzes": [
+      {
+        "@id": "ex:Data"
+      }
+    ],
+    "ex:Detects": [
+      {
+        "@id": "ex:Patterns"
+      }
+    ],
+    "ex:Processes": [
+      {
+        "@id": "ex:Data"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Real_Time_Data",
+    "@type": [
+      "ex:Data"
+    ]
+  },
+  {
+    "@id": "ex:Satellite_Imagery",
+    "ex:Used_For": [
+      {
+        "@id": "ex:Wide_Area_Flood_Monitoring"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Siphoning",
+    "ex:Causes": [
+      {
+        "@id": "ex:Flood"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Weather_Station",
+    "@type": [
+      "ex:Sensor"
+    ],
+    "ex:ConnectedVia": [
+      {
+        "@id": "ex:Narrowband_IoT"
+      },
+      {
+        "@id": "ex:Short_Range_Wireless"
+      },
+      {
+        "@id": "ex:Cellular_Networks"
+      }
+    ],
+    "ex:Measures": [
+      {
+        "@id": "ex:Evaporation"
+      },
+      {
+        "@id": "ex:Humidity"
+      },
+      {
+        "@id": "ex:Atmospheric_Pressure"
+      },
+      {
+        "@id": "ex:Wind_Direction"
+      },
+      {
+        "@id": "ex:Wind_Speed"
+      },
+      {
+        "@id": "ex:Solar_Radiation"
+      },
+      {
+        "@id": "ex:Temperature"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Satellite_Communication",
+    "@type": [
+      "ex:Communication_Protocol"
+    ],
+    "ex:Enables": [
+      {
+        "@id": "ex:Data_Transmission_From_Remote_Areas"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Long_Short_Term_Memory_LSTM",
+    "@type": [
+      "ex:Deep_Learning_Models"
+    ]
+  },
+  {
+    "@id": "ex:Urban_Planning",
+    "ex:Minimizes": [
+      {
+        "@id": "ex:Infrastructure_Damage"
+      }
     ]
   },
   {
@@ -507,6 +413,721 @@
     "ex:Notify": [
       {
         "@id": "ex:General_Public"
+      }
+    ],
+    "ex:PrioritizedBy": [
+      {
+        "@id": "ex:Severity_Score"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Data",
+    "ex:Reflects": [
+      {
+        "@id": "ex:Water_Quality"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Detention_Ponds",
+    "@type": [
+      "ex:Stormwater_Bassin"
+    ]
+  },
+  {
+    "@id": "ex:Cameras",
+    "ex:Detect": [
+      {
+        "@id": "ex:Flood"
+      }
+    ],
+    "ex:Generate": [
+      {
+        "@id": "ex:Data"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Environmental_Damage",
+    "@type": [
+      "ex:Infrastructure_Damage"
+    ],
+    "ex:LeadsTo": [
+      {
+        "@id": "ex:Loss_Of_Life"
+      },
+      {
+        "@id": "ex:Health_And_Safety_Risks"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Dedicated_Smartphone_App",
+    "@type": [
+      "ex:Communication_Channels"
+    ]
+  },
+  {
+    "@id": "ex:Infrastructure_Damage",
+    "ex:Evaluated_Through": [
+      {
+        "@id": "ex:Infrastructure_Damage_Scenarios"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Water_Quality_Sensor",
+    "@type": [
+      "ex:Sensor"
+    ],
+    "ex:ConnectedVia": [
+      {
+        "@id": "ex:LoRaWAN"
+      },
+      {
+        "@id": "ex:Narrowband_IoT"
+      },
+      {
+        "@id": "ex:Short_Range_Wireless"
+      }
+    ],
+    "ex:Measures": [
+      {
+        "@id": "ex:Salinity"
+      },
+      {
+        "@id": "ex:Water_Quality"
+      },
+      {
+        "@id": "ex:pH_Level"
+      },
+      {
+        "@id": "ex:Turbidity"
+      },
+      {
+        "@id": "ex:Dissolved_Oxygen"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Soil_Moisture_Sensor",
+    "@type": [
+      "ex:Sensor"
+    ],
+    "ex:ConnectedVia": [
+      {
+        "@id": "ex:Narrowband_IoT"
+      },
+      {
+        "@id": "ex:LoRaWAN"
+      },
+      {
+        "@id": "ex:Sigfox"
+      }
+    ],
+    "ex:Measures": [
+      {
+        "@id": "ex:Soil_Moisture"
+      }
+    ]
+  },
+  {
+    "@id": "ex:River_Overflow",
+    "ex:Causes": [
+      {
+        "@id": "ex:Flood"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Federated_Learning",
+    "ex:Preserves": [
+      {
+        "@id": "ex:Data_Privacy"
+      }
+    ],
+    "ex:Requires": [
+      {
+        "@id": "ex:Edge_Computing"
+      }
+    ],
+    "ex:Supports": [
+      {
+        "@id": "ex:Distributed_Learning"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Television_Announcements",
+    "@type": [
+      "ex:Communication_Channels"
+    ]
+  },
+  {
+    "@id": "ex:Buildings_Damage",
+    "@type": [
+      "ex:Property_Damage"
+    ]
+  },
+  {
+    "@id": "ex:Mobile_Phone_Messages",
+    "@type": [
+      "ex:Communication_Channels"
+    ]
+  },
+  {
+    "@id": "ex:Big_Data_Platforms",
+    "ex:Store": [
+      {
+        "@id": "ex:Data"
+      },
+      {
+        "@id": "ex:Satellite_Imagery"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Transformer",
+    "@type": [
+      "ex:Deep_Learning_Models"
+    ]
+  },
+  {
+    "@id": "ex:Autonomous_Drones",
+    "ex:Detect": [
+      {
+        "@id": "ex:Flood"
+      }
+    ],
+    "ex:Guide": [
+      {
+        "@id": "ex:Evacuation_Routes"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Weather_Forecasting_System",
+    "ex:Analyzes": [
+      {
+        "@id": "ex:Data"
+      },
+      {
+        "@id": "ex:Satellite_Imagery"
+      }
+    ],
+    "ex:Generates": [
+      {
+        "@id": "ex:Forecasting"
+      }
+    ],
+    "ex:Uses": [
+      {
+        "@id": "ex:Digital_Twin"
+      },
+      {
+        "@id": "ex:Sensor"
+      },
+      {
+        "@id": "ex:Weather_Prediction_Model"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Traffic_Diruption",
+    "@type": [
+      "ex:Infrastructure_Damage"
+    ]
+  },
+  {
+    "@id": "ex:Emergency_Radio_Broadcasts",
+    "@type": [
+      "ex:Communication_Channels"
+    ]
+  },
+  {
+    "@id": "ex:Computer_Vision",
+    "ex:Analyzes": [
+      {
+        "@id": "ex:Satellite_Imagery"
+      }
+    ],
+    "ex:Performs": [
+      {
+        "@id": "ex:Image_Based_Flood_Detection"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Autoregressive_Integrated_Moving_Average_ARIMA",
+    "@type": [
+      "ex:Machine_Learning_Models"
+    ]
+  },
+  {
+    "@id": "ex:Social_Media_Notification",
+    "@type": [
+      "ex:Communication_Channels"
+    ]
+  },
+  {
+    "@id": "ex:Flood_Prediction_Model",
+    "ex:Analyzes": [
+      {
+        "@id": "ex:Data"
+      },
+      {
+        "@id": "ex:Forecasting"
+      },
+      {
+        "@id": "ex:Satellite_Imagery"
+      }
+    ],
+    "ex:Calculates": [
+      {
+        "@id": "ex:Severity_Score"
+      }
+    ],
+    "ex:Employs": [
+      {
+        "@id": "ex:Deep_Learning_Models"
+      },
+      {
+        "@id": "ex:Machine_Learning_Models"
+      }
+    ],
+    "ex:Predicts": [
+      {
+        "@id": "ex:River_Overflow"
+      },
+      {
+        "@id": "ex:Flood"
+      }
+    ],
+    "ex:Processes": [
+      {
+        "@id": "ex:Satellite_Imagery"
+      },
+      {
+        "@id": "ex:Data"
+      },
+      {
+        "@id": "ex:Forecasting"
+      }
+    ],
+    "ex:Uses": [
+      {
+        "@id": "ex:Time_Series_Analysis"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Property_Damage",
+    "@type": [
+      "ex:Infrastructure_Damage"
+    ]
+  },
+  {
+    "@id": "ex:Historical_Data",
+    "@type": [
+      "ex:Data"
+    ]
+  },
+  {
+    "@id": "ex:Consumer_Cameras",
+    "@type": [
+      "ex:Cameras"
+    ]
+  },
+  {
+    "@id": "ex:Business_Disruption",
+    "@type": [
+      "ex:Infrastructure_Damage"
+    ]
+  },
+  {
+    "@id": "ex:Satellites",
+    "ex:Generate": [
+      {
+        "@id": "ex:Satellite_Imagery"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Cellular_Networks",
+    "@type": [
+      "ex:Communication_Protocol"
+    ],
+    "ex:Enables": [
+      {
+        "@id": "ex:High_Bandwidth_Mobile_Data_Communication"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Snowmelt",
+    "ex:Causes": [
+      {
+        "@id": "ex:Flood"
+      }
+    ]
+  },
+  {
+    "@id": "ex:K_Nearest_Neighbors_KNN",
+    "@type": [
+      "ex:Machine_Learning_Models"
+    ]
+  },
+  {
+    "@id": "ex:River_Flood_Warning_System",
+    "ex:Analyzes": [
+      {
+        "@id": "ex:Data"
+      }
+    ],
+    "ex:Detects": [
+      {
+        "@id": "ex:River_Overflow"
+      }
+    ],
+    "ex:Generates": [
+      {
+        "@id": "ex:Alerts"
+      }
+    ],
+    "ex:Monitors": [
+      {
+        "@id": "ex:River_Level"
+      }
+    ],
+    "ex:Uses": [
+      {
+        "@id": "ex:Computer_Vision"
+      },
+      {
+        "@id": "ex:Cameras"
+      },
+      {
+        "@id": "ex:Digital_Twin"
+      },
+      {
+        "@id": "ex:Flood_Prediction_Model"
+      },
+      {
+        "@id": "ex:Sensor"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Homes_Damage",
+    "@type": [
+      "ex:Property_Damage"
+    ]
+  },
+  {
+    "@id": "ex:Random_Forest",
+    "@type": [
+      "ex:Machine_Learning_Models"
+    ]
+  },
+  {
+    "@id": "ex:Snowfall",
+    "@type": [
+      "ex:Weather_Events"
+    ],
+    "ex:Causes": [
+      {
+        "@id": "ex:Snowmelt"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Heavy_Rainfall",
+    "@type": [
+      "ex:Weather_Events"
+    ],
+    "ex:Causes": [
+      {
+        "@id": "ex:Flood"
+      }
+    ],
+    "ex:LeadsTo": [
+      {
+        "@id": "ex:River_Overflow"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Retention_Ponds",
+    "@type": [
+      "ex:Stormwater_Bassin"
+    ],
+    "ex:ContributeTo": [
+      {
+        "@id": "ex:Flood_Control"
+      }
+    ],
+    "ex:Improve": [
+      {
+        "@id": "ex:Water_Quality"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Sensor",
+    "ex:Detects": [
+      {
+        "@id": "ex:Flood"
+      }
+    ],
+    "ex:Generates": [
+      {
+        "@id": "ex:Data"
+      }
+    ]
+  },
+  {
+    "@id": "ex:DecisionTree",
+    "@type": [
+      "ex:Machine_Learning_Models"
+    ]
+  },
+  {
+    "@id": "ex:Convolutional_Neural_Networks_CNN",
+    "@type": [
+      "ex:Deep_Learning_Models"
+    ]
+  },
+  {
+    "@id": "ex:Bridge_Damage",
+    "@type": [
+      "ex:Property_Damage"
+    ]
+  },
+  {
+    "@id": "ex:Sigfox",
+    "@type": [
+      "ex:Low_Power_Wide_Area_Networks_LPWAN"
+    ]
+  },
+  {
+    "@id": "ex:Soil_Erosion",
+    "@type": [
+      "ex:Environmental_Damage"
+    ]
+  },
+  {
+    "@id": "ex:Tsunami",
+    "ex:Causes": [
+      {
+        "@id": "ex:Flood"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Floodways",
+    "ex:Diverts": [
+      {
+        "@id": "ex:River_Overflow"
+      }
+    ],
+    "ex:Mitigate": [
+      {
+        "@id": "ex:Flood"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Vehicles_Damage",
+    "@type": [
+      "ex:Property_Damage"
+    ]
+  },
+  {
+    "@id": "ex:Weather_Prediction_Model",
+    "ex:Analyzes": [
+      {
+        "@id": "ex:Satellite_Imagery"
+      },
+      {
+        "@id": "ex:Data"
+      }
+    ],
+    "ex:Calculates": [
+      {
+        "@id": "ex:Severity_Score"
+      }
+    ],
+    "ex:Employs": [
+      {
+        "@id": "ex:Machine_Learning_Models"
+      },
+      {
+        "@id": "ex:Deep_Learning_Models"
+      }
+    ],
+    "ex:Predicts": [
+      {
+        "@id": "ex:Weather_Events"
+      }
+    ],
+    "ex:Processes": [
+      {
+        "@id": "ex:Data"
+      },
+      {
+        "@id": "ex:Satellite_Imagery"
+      }
+    ],
+    "ex:Uses": [
+      {
+        "@id": "ex:Time_Series_Analysis"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Digital_Twin",
+    "ex:Simulates": [
+      {
+        "@id": "ex:Infrastructure_Damage_Scenarios"
+      },
+      {
+        "@id": "ex:Flood_Scenarios"
+      }
+    ],
+    "ex:Supports": [
+      {
+        "@id": "ex:Decision_Making"
+      }
+    ],
+    "ex:Uses": [
+      {
+        "@id": "ex:Data"
+      },
+      {
+        "@id": "ex:Satellite_Imagery"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Water_Level_Sensor",
+    "@type": [
+      "ex:Sensor"
+    ],
+    "ex:ConnectedVia": [
+      {
+        "@id": "ex:Satellite_Communication"
+      },
+      {
+        "@id": "ex:Short_Range_Wireless"
+      },
+      {
+        "@id": "ex:Narrowband_IoT"
+      },
+      {
+        "@id": "ex:LoRaWAN"
+      }
+    ],
+    "ex:Measures": [
+      {
+        "@id": "ex:Water_Level"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Evacuation_Of_Residents",
+    "ex:Reduces": [
+      {
+        "@id": "ex:Loss_Of_Life"
+      },
+      {
+        "@id": "ex:Health_And_Safety_Risks"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Streamflow_Sensor",
+    "@type": [
+      "ex:Sensor"
+    ],
+    "ex:ConnectedVia": [
+      {
+        "@id": "ex:Narrowband_IoT"
+      },
+      {
+        "@id": "ex:LoRaWAN"
+      },
+      {
+        "@id": "ex:Satellite_Communication"
+      },
+      {
+        "@id": "ex:Short_Range_Wireless"
+      },
+      {
+        "@id": "ex:Cellular_Networks"
+      }
+    ],
+    "ex:Measures": [
+      {
+        "@id": "ex:Streamflow"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Short_Range_Wireless",
+    "@type": [
+      "ex:Communication_Protocol"
+    ],
+    "ex:Enables": [
+      {
+        "@id": "ex:Localized_Sensor_Cluster_Communication"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Recurrent_Neural_Networks_RNN",
+    "@type": [
+      "ex:Deep_Learning_Models"
+    ]
+  },
+  {
+    "@id": "ex:Water_Quality",
+    "ex:Affects": [
+      {
+        "@id": "ex:Environmental_Damage"
+      }
+    ],
+    "ex:Impacts": [
+      {
+        "@id": "ex:Health_And_Safety_Risks"
+      }
+    ]
+  },
+  {
+    "@id": "ex:LoRaWAN",
+    "@type": [
+      "ex:Low_Power_Wide_Area_Networks_LPWAN"
+    ]
+  },
+  {
+    "@id": "ex:Low_Power_Wide_Area_Networks_LPWAN",
+    "@type": [
+      "ex:Communication_Protocol"
+    ],
+    "ex:Enables": [
+      {
+        "@id": "ex:Long_Range_Low_Power_Sensor_Connectivity"
+      }
+    ]
+  },
+  {
+    "@id": "ex:Storm_Surges",
+    "@type": [
+      "ex:Weather_Events"
+    ],
+    "ex:Causes": [
+      {
+        "@id": "ex:Flood"
       }
     ]
   }
